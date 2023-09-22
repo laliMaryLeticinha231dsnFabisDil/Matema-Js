@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="exercicio.css">
+    <title>Matemática</title>
+</head>
+
+<body>
+    <h1 class="geo"> FORMAS GEOMÉTRICAS</h1>
+
+    <div class="quadrado">
+
+    </div>
+
+
+    <div class="formas">
+
+        <div class="formaUm">
+            <img src="img/cilindro-removebg-preview (2).png" alt="" class="cilindro" onclick="cilindro()">
+            <div class="caixa">
+                <p id="caixaUm"></p>
+            </div>
+        </div>
+        <div class="formaUm">
+            <img src="img/cone-removebg-preview (2).png" alt="" class="cone" onclick="cone()">
+            <p id="caixaDois"></p>
+        </div>
+        <div class="formaUm">
+            <img src="img/esfera-removebg-preview.png" alt="" class="esfera" onclick="esfera()">
+            <p id="caixaTres"></p>
+        </div>
+        <div class="formaUm">
+            <img src="img/prisma-removebg-preview.png" alt="" class="prisma" onclick="prisma()">
+            <p id="caixaQuatro"></p>
+        </div>
+        <div class="formaUm">
+            <img src="img/triangulo-removebg-preview.png" alt="" class="triangulo" onclick="piramede()">
+            <p id="caixaCinco"></p>
+        </div>
+    </div>
+
+    <script>
+        function cilindro() {
+            let a = Number(prompt("insira um número"));
+            let b = Number(prompt("insira um número"));
+            let c = Number(3.14);
+            let resultado = (c * (a ** 2) * b);
+            document.getElementById('caixaUm').innerHTML = "O volume do cilindro é " + resultado
+            alert("o resultado do volume é " + resultado + "m³");
+        };
+
+        function cone() {
+            let a = Number(prompt("insira um número"));
+            let b = Number(prompt("insira um número"));
+            let c = Number(1 / 3);
+            let resultado = (c * a ** b);
+            document.getElementById('caixaDois').innerHTML = "O volume do cone é" + resultado
+            alert("o resultado do volume é " + resultado + "m³");
+        };
+
+
+        function esfera() {
+            let a = Number(prompt("insira um número"));
+            let b = Number(prompt("insira um número"));
+            let c = Number(3);
+            let resultado = (a * b * (c ** 3) / 3);
+            document.getElementById('caixaTres').innerHTML = "O volume do esfera é" + resultado;
+            alert("o resultado do volume é " + resultado + "m³");
+        };
+
+
+        function prisma() {
+            let a = Number(prompt("insira um número"));
+            let b = Number(prompt("insira um número"));
+            let c = Number(3.14);
+            let resultado = (c * (a ** 2) * b);
+            document.getElementById('caixaQuatro').innerHTML = "O volume do cilindro é" + resultado
+            alert("o resultado do volume é " + resultado + "m³");
+        };
+
+
+
+        function piramede() {
+            let a = Number(prompt("insira um número"));
+            let b = Number(prompt("insira um número"));
+            let resultado = (a * b);
+            document.getElementById('caixaCinco').innerHTML = "O volume do cilindro é" + resultado
+            alert("o resultado do volume é " + resultado + "m³");
+        };
+
+
+
+
+
+    </script>
+
+
+</body>
+
+</html>

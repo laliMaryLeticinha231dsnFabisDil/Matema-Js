@@ -1,0 +1,54 @@
+
+body{
+    background-color: blanchedalmond;
+}
+
+.geo{
+    text-align: center;
+}
+.formas{
+    margin-top: 100px;
+    display: flex;
+    padding: 150px;
+    flex-direction: row;
+   
+  
+}
+
+.titulo{
+    flex-direction: row; 
+   padding: 150px;
+   display: flex;
+}
+
+.formaUm{
+    margin-right : 60px;
+    background-color:aliceblue ;
+    width: 250px;
+    right: 200px;
+    height: 300px;
+   border-radius: 8px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+img{
+    width: 100px;
+    
+}
+ 
+.formaUm:hover{
+   -webkit-transform: scale (1.1);
+   transform: scale(1.5);
+}
+
+
+.caixa{
+    margin-top: 300px;
+   font-family: sans-serif;
+   display: flex;
+   
+   
+}
+
